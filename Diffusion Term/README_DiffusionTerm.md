@@ -123,7 +123,7 @@ S=T \frac{(2x − 0.2y)}{400},\quad
 ```
 Assignment1_Diffusion/
 │
-├── orthogonal_case_227.m      # textbook orthogonal benchmark (Moukalled p. 227)
+├── orthogonal_case.m      # textbook orthogonal benchmark (Moukalled p. 227)
 ├── diffusion_solver.m         # non-orthogonal diffusion solver
 ├── mesh_generator.m           # transfinite interpolation mesh
 ├── boundary_conditions.m      # Dirichlet/Neumann setup

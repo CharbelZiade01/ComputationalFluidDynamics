@@ -1,4 +1,4 @@
-# 💨 Assignment 4 – 2D Incompressible Flow Solver (SIMPLE Algorithm)
+# Assignment 4 – 2D Incompressible Flow Solver (SIMPLE Algorithm)
 
 ![MATLAB](https://img.shields.io/badge/Language-MATLAB-blue)
 ![FVM](https://img.shields.io/badge/Method-Finite%20Volume%20Method-orange)
@@ -150,7 +150,7 @@ Incompressible Flow Equation/
 
 ---
 
-## 🖋️ Author
+## Author
 
 **Charbel Ziade**  
 Master of Engineering in Mechanical Engineering (Energy Track) – American University of Beirut (AUB)  
