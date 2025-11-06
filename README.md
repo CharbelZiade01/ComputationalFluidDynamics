@@ -13,7 +13,7 @@
 > **Semester:** Spring 2024  
 
 ---
-
+<img> figs/psi.png</img > 
 ## Project Overview
 
 This repository contains a step-by-step development of a **general 2D CFD solver** using the **Finite Volume Method (FVM)** in MATLAB.  
@@ -35,9 +35,8 @@ Each folder includes its **own README** explaining the governing equations, disc
 All solvers are implemented using the **Finite Volume Method**, ensuring conservation at the control-volume level.  
 
 ### General Equation
-\[
-\frac{\partial (\rho \phi)}{\partial t} + \nabla \cdot (\rho \vec{v}\phi) = \nabla \cdot (\Gamma \nabla \phi) + S_\phi
-\]
+
+![Alt text](figs/equation.png)
 
 Where φ represents the transported scalar (temperature, velocity, etc.).  
 
@@ -50,6 +49,9 @@ Where φ represents the transported scalar (temperature, velocity, etc.).
 - Validates with the **orthogonal benchmark case** (Moukalled et al., 2016, Example 5.2 p. 227).  
 - Extends to **non-orthogonal structured meshes** using **Transfinite Interpolation** (TFI).  
 - Solved using **Gauss–Seidel** and **TDMA** iterative methods.  
+
+This is a coarse mesh representing the geometry of the discretization of the diffusion term:
+![Alt text](figs/Diffusion_Mesh.png)
 
 
 📂 Folder: `Diffusion Term/`  
@@ -64,6 +66,9 @@ Where φ represents the transported scalar (temperature, velocity, etc.).
   - **Modified SMART Scheme** (accurate & bounded via deferred correction)  
 - Benchmarked on the **transverse step-profile convection test**.  
 - Compares both schemes along the domain centerline.
+
+This graph shows the graph of 𝜙 using the Upwind scheme:
+![Alt text](figs/Advection.png)
 
 📂 Folder: `Advection Term/`  
 📄 Detailed README: [README_Advection.md](README_Advection.md)
